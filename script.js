@@ -9,5 +9,11 @@ const generateTarget = () => {
 };
 
 const compareGuesses = (humanGuess, compGuess, secNum) => {
-    
-}
+    if (Math.abs(humanGuess - secNum) < Math.abs(compGuess - secNum)) {
+        return true;
+    } else if (Math.abs(humanGuess - secNum) > Math.abs(compGuess - secNum)) {
+        return false;
+    } else {
+        return true;
+    };
+};
